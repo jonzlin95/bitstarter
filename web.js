@@ -8,7 +8,7 @@ app.get('/', function(request, response) {
   response.send(
      out = fs.readFileSync('index.html');
      testBuffer = new Buffer(out,'utf-8');
-     outString = testBuffer.(toString);
+     outString = testBuffer.toString();
      response.send(outString);
   );
 });
